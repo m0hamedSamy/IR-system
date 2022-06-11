@@ -1,7 +1,4 @@
 from tkinter import *
-
-from documentCollection import DocumentCollection
-from indexer import Indexer
 from rank import Rank
 from search import Search
 

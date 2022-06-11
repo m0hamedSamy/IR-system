@@ -1,8 +1,6 @@
 import string
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-from prettytable import PrettyTable
-from Print import PrintValue
 
 
 class Preprocessing:
