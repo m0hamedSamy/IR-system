@@ -1,10 +1,6 @@
 from math import log
 from math import sqrt
 
-# want to make sure whither the ranking methods work on all the positional index
-# and all the document collection or it's working only on the relevant docs that
-# we extracted in the phrase query method ???
-
 
 class Rank:
 
@@ -21,10 +17,6 @@ class Rank:
         similarity_of_relevant_docs = {}
         for document in relevant_docs:
             similarity_of_relevant_docs[document] = similarity.get(document)
-
-        # for document in similarity.keys():
-        #     if similarity[document] != 0:
-        #         similarity_of_relevant_docs[document] = similarity.get(document)
 
         similarity_of_relevant_docs = sorted(similarity_of_relevant_docs.items(), key=lambda x: x[1], reverse=True)
 
